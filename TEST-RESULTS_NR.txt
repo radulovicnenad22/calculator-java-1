@@ -1,0 +1,70 @@
+Assignment-Testiranje
+
+1. Sistemsko testiranje = Testiranje prihvatljivosti (Black Box)
+
+Pokretanjem programa "Calculator" uz pomoć VSC korišćenjem "Run without Debugging" na terminalu se dobija očekivani izraz "Enter expression here (type 'exit' to quit):".
+
+Daljim unosom podataka uočene su sledeće stvari:
+
+* Ispisivanjem 'exit' texta dobija se očeikivan izlaz iz programa.
+* Ispisivanjem nekog drugog texta npr 'nenad' ispisuje se text 'ERROR' što je i očekivano.
+
+* Ispisivanjem jednocifrenog broja 0 ispisuje se decimalan zapis u vidu dodate jedne nule 0.0 .
+* Ispisivanjem broja 000 ispisuje se decimalan zapis u vidu dodate jedne nule 0.0 .
+
+* Ispisivanjem pozitivnog jednocifrenog broja 1 ispisuje se decimalan zapis u vidu dodate jedne nule 1.0 .
+* Ispisivanjem pozitivnog višecifrenog broja 1000 ispisuje se decimalan zapis u vidu dodate jedne nule 1000.0 .
+* Ispisivanjem pozitivnog broja 00001 ispisuje se decimalan zapis u vidu dodate jedne nule 1.0 .
+
+* Ispisivanjem negativnog jednocifrenog broja -2 ispisuje se decimalan zapis u vidu dodate jedne nule -2.0 .
+* Ispisivanjem negativnog višecifrenog broja -2000 ispisuje se decimalan zapis u vidu dodate jedne nule -2000.0 .
+* Ispisivanjem negativnog broja -00002 ispisuje se decimalan zapis u vidu dodate jedne nule -2.0 .
+
+* Ispisivanjem zareza u vidu decimalnog zapisa željenog broja ispisuje se textualna poruka 'ERROR'.
+* Ispisivanjem zagrada u željenim matematičkim izrazima dobija se ispisana textualna poruka 'ERROR'.
+
+* Korišćenjem matematičke funkcije sabiranja korišćenjem pozitivnih brojeva ispisivanjem izraza 2+3 dobija se očekivani tačan rezultat 5.0 .
+* Korišćenjem matematičke funkcije sabiranja korišćenjem kombinovanih brojeva ispisivanjem izraza -2+1 dobija se očekivani tačan rezultat -1.0.
+* Korišćenjem matematičke funkcije sabiranja korišćenjem kombinovanih brojeva ispisivanjem izraza -2+2 dobija se očekivani tačan rezultat 0.0.
+* Korišćenjem matematičke funkcije sabiranja korišćenjem decimalnih pozitivnih brojeva ispisivanjem izraza 2.1+1.2 dobija se očekivani tačan rezultat 3.3 .
+* Korišćenjem matematičke funkcije sabiranja korišćenjem decimalnih kombinovanih brojeva ispisivanjem izraza -2.1+2.1 dobija se očekivani tačan rezultat 0.0 .
+* Korišćenjem matematičke funkcije sabiranja korišćenjem decimalnih kombinovanih brojeva ispisivanjem izraza -2.1+1.2 dobija se neočekivani rezultat -0.89999986. Očekivani rezultat -0.9 .
+
+* Korišćenjem matematičke funkcije oduzimanja korišćenjem negativnih brojeva ispisivanjem izraza -2-3 dobija se očekivani tačan rezultat -5.0 .
+* Korišćenjem matematičke funkcije oduzimanja korišćenjem kombinovanih brojeva ispisivanjem izraza 2-3 dobija se očekivani tačan rezultat -1.0 .
+* Korišćenjem matematičke funkcije oduzimanja korišćenjem kombinovanih brojeva ispisivanjem izraza 3-2 dobija se očekivani tačan rezultat 1.0 .
+* Korišćenjem matematičke funkcije oduzimanja korišćenjem kombinovanih brojeva ispisivanjem izraza 2-2 dobija se očekivani tačan rezultat 0.0 .
+* Korišćenjem matematičke funkcije oduzimanja korišćenjem decimalnih negativnih brojeva ispisivanjem izraza -2.1-1.2 dobija se očekivani tačan rezultat -3.3 .
+* Korišćenjem matematičke funkcije oduzimanja korišćenjem decimalnih kombinovanih brojeva ispisivanjem izraza 2.1-2.1 dobija se očekivani tačan rezultat 0.0 . 
+* Korišćenjem matematičke funkcije oduzimanja korišćenjem decimalnih kombinovanih brojeva ispisivanjem izraza 1.2-2.1 dobija se neočekivani rezultat -0.89999986. Očekivani rezultat -0.9 .
+
+* Korišćenjem matematičke funkcije množenja ispisivanjem izraza 0*3 dobija se očekivani tačan rezultat 0.0 .
+* Korišćenjem matematičke funkcije množenja korišćenjem pozitivnih brojeva ispisivanjem izraza 2*3 dobija se očekivani tačan rezultat 6.0 .
+* Korišćenjem matematičke funkcije množenja korišćenjem negatinvih brojeva ispisivanjem izraza -2*-3 ispisuje se textualna poruka 'ERROR'.
+* Korišćenjem matematičke funkcije množenja korišćenjem negatinvih brojeva ispisivanjem izraza -2*(-3) ispisuje se textualna poruka 'ERROR'.
+* Korišćenjem matematičke funkcije množenja korišćenjem kombinovanih brojeva ispisivanjem izraza -2*3 dobija se očekivani tačan rezultat -6.0 .
+* Korišćenjem matematičke funkcije množenja korišćenjem decimalnih pozitivnih brojeva ispisivanjem izraza 2.1*1.2 dobija se očekivani tačan rezultat 2.52 .
+* Korišćenjem matematičke funkcije množenja korišćenjem decimalnih negativnih brojeva ispisivanjem izraza -2.1*-1.2 ispisuje se textualna poruka 'ERROR'.
+* Korišćenjem matematičke funkcije množenja korišćenjem decimalnih negativnih brojeva ispisivanjem izraza -2.1*(-1.2) ispisuje se textualna poruka 'ERROR'.
+* Korišćenjem matematičke funkcije množenja korišćenjem decimalnih kombinovanih brojeva ispisivanjem izraza -2.1*1.2 dobija se očekivani tačan rezultat -2.52 .
+
+* Kada koristimo matematičku funkciju deljenja u izrazu 0/0 dibija se rezultat u vidu texta 'Nan' što je i očekivano.
+* Korišćenjem matematičke funkcije deljenja korišćenjem pozitivnih brojeva ispisivanjem izraza 3/3 dobija se očekivani tačan rezultat 1.0 .
+* Korišćenjem matematičke funkcije deljenja korišćenjem pozitivnih brojeva ispisivanjem izraza 2/3 dobija se očekivani tačan rezultat 0.6666667 .
+* Korišćenjem matematičke funkcije deljenja korišćenjem negatinvih brojeva ispisivanjem izraza -2/-3 ispisuje se textualna poruka 'ERROR'.
+* Korišćenjem matematičke funkcije deljenja korišćenjem negatinvih brojeva ispisivanjem izraza -2/(-3) ispisuje se textualna poruka 'ERROR'.
+* Korišćenjem matematičke funkcije deljenja korišćenjem kombinovanih brojeva ispisivanjem izraza -2/3 dobija se očekivani tačan rezultat -0.6666667 .
+* Korišćenjem matematičke funkcije deljenja korišćenjem decimalnih pozitivnih brojeva ispisivanjem izraza 2.1/1.2 dobija se neočekivani rezultat 1.7499999 . Očekivani rezultat 1.75 .
+* Korišćenjem matematičke funkcije deljenja korišćenjem decimalnih negativnih brojeva ispisivanjem izraza -2.1/-1.2 ispisuje se textualna poruka 'ERROR'.
+* Korišćenjem matematičke funkcije deljenja korišćenjem decimalnih negativnih brojeva ispisivanjem izraza -2.1/(-1.2) ispisuje se textualna poruka 'ERROR'. 
+* Korišćenjem matematičke funkcije deljenja korišćenjem decimalnih kombinovanih brojeva ispisivanjem izraza -2.1/1.2 dobija se neočekivani rezultat -1.7499999 . Očekivani rezultat -1.75 .
+
+Rezultati testiranja
+Svi primeri urađenog testiranja su uspešno obavljeni. Rezultati su bili očekivani osim u tri slučaja. 
+Prvi slučaj kada se koristila matematička funkcija oduzimanje pri korišćenju decimalnih kombinovanih brojeva gde je rezultat ispisan sa decimalnim ostatkom što nije očekivano.
+Druga dva slučaja odnosila su se pri korišćenju matematičke funkcije deljenja gde je rezultat prikazan sa sedam decimala.   
+
+Zapažanje
+Korišćenjem VSC primećen problem.
+Ln 1, Col 1 = CalculateTest.java nije projektni fajl, samo sintaksne greške se prijavljuju.
+
